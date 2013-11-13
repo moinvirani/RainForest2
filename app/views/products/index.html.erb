@@ -1,2 +1,14 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Welcome To Bithub </h1>
+<h2>Buying tickets with friends has never been this simple</h2>
+
+
+<div class="center">
+	<p>Here is a list of products we sell: </p>
+	<ul>
+		<li>
+			<% @products.each do |f| %>
+			<%= f.formatted_price %>
+			<% end %>
+		</li>
+	</ul>
+</div>
